@@ -32,19 +32,10 @@ p, li {
     letter-spacing: 1px;
 }
 
-  .aboutme {
-    display: block;
+a {
+    font-size: 20px;
 }
 
-.skills {
-    display: block;
-
-}
-
-.projects {
-    display: block
-}
-
-.comments {
-    display: block;
+#skills img {
+    display: inline;
 }

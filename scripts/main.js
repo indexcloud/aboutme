@@ -14,19 +14,20 @@ let myHeading = document.querySelector('#visitor');
 
 function setUserName() {
     let myName = prompt('Please enter your name.');
+    
     if (!myName) {
         setUserName();
     } else {
         localStorage.setItem('name', myName);
         myHeading.textContent = 'Thank you for visiting this website, ' + myName + ', you are awesome!';
     }
-}
 
-if (!localStorage.getItem('name')) {
-    setUserName();
-} else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Thank you for visiting this website, ' + storedName + ', you are awesome!';
+    if (!localStorage.getItem('name')) {
+        setUserName();
+    } else {
+        let storedName = localStorage.getItem('name');
+        myHeading.textContent = 'Thank you for visiting this website, ' + storedName + ', you are awesome!';
+    }
 }
 
 myButton.onclick = function() {

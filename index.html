@@ -1,47 +1,171 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <meta charset="utf-8">
-        <title>About Me</title>
-        <link href="styles/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    </head>
 
-    <body>
-        
-        <div id="aboutme">
-            <h1>About Me</h1>
-            <img id="imgMe" src="images/me.jpeg" alt="self-portrait" width="350" height="350">
-            <p>Currently working as accoutant, love technology. I'm a big fan of Cristiano Ronaldo, if you live in Houston, maybe we can play soccer together (well, after this Covid thing).</p>
-            <a href="https://github.com/indexcloud" target="_blank">GitHub</a>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+    <title>Jason Deng</title>
+</head>
+
+<body>
+
+    <section class="s1">
+        <div class="main-container">
+
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+
+                    <ul id="navigation">
+                        <li><a href="index.html#contact">About Me</a></li>
+                    </ul>
+
+                    <div id="theme-options-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
+                    </div>
+
+                </div>
+
+                <div class="left-column">
+                    <img id="profile_pic" src="images/me.jpeg">
+
+                    <div>
+                        <a target="_blank" href="https://github.com/indexcloud">GitHub</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/jason-g-deng-791270136/">LinkedIn</a>
+                    </div>
+
+                </div>
+
+                <div class="right-column">
+
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <p>Hi, I'm Jason Deng. I'm a full Stack Developer with an Accounting background. Love
+                                playing soccer, if you live in Houston, maybe we can play soccer
+                                together.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-     
-        <div id="skills">
-            <h1>Skills</h1>
-            <img src="images/html5.png" alt="html5 logo" width="50" height="50">
-            <img src="images/css3.png" alt="css3 logo" width="54" height="54">
-            <img src="images/javascript.png" alt="javascript logo" width="50" height="50">
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+
+            <div class="skills-wrapper">
+                <div>
+
+                    <h3 style="text-align: center;">Skills</h3>
+
+                    <div>
+                        <ul id="skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.JS</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>Heroku</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+    </section>
 
-        <div id="projects">
-            <h1>Projects</h1>
-            <p>Stay tuned.</p>
+    <section class="s1">
+        <div class="main-container">
+            <h3 style="text-align: center;">Projects</h3>
 
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-            </ul>
+            <div class="post-wrapper">
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/amazonish.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Amazonish</h6>
+                            <p class="post-intro">Amazon sytled small e-commerce webstie. Search for common products.
+                            </p>
+                            <p class="post-intro">Built with Node.js, EJS, Postgres</p>
+                            <a target="_blank" href="https://amazonish-1.herokuapp.com/">Demo</a>
+                            <br>
+                            <a target="_blank" href="https://github.com/indexcloud/amazonish-1">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/investfolio.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Investfolio</h6>
+                            <p class="post-intro">Passive investment tracking website.Help you rebalance your stock
+                                portfolio.</p>
+                            <p class="post-intro">Built with React, Redux</p>
+                            <a target="_blank" href="https://investfolio.netlify.app/">Demo</a>
+                            <br>
+                            <a target="_blank" href="https://github.com/indexcloud/investfolio">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/hourglass-billing.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Hourglass Billing</h6>
+                            <p class="post-intro">Legal fee billing web app for attorneys to record their billable hours
+                                and invoicing.</p>
+                            <p class="post-intro">Built with React, Node.js, Postgres</p>
+                            <a target="_blank" href="https://hourglass-billing.herokuapp.com/">Demo</a>
+                            <br>
+                            <a target="_blank" href="https://github.com/indexcloud/hourglass-billing-fullstack">Source
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div id="visitors">
-            <h1>Visitors</h1>
-            <p id="visitor"></p>
-            
+    <section class="s2">
+        <div class="main-container">
+            <!-- <a href=""></a> -->
+            <h3 style="text-align: center;">Contact Me</h3>
+
+            <form id="contact-form">
+                <a name="contact"></a>
+
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea class="input-field" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
+    </section>
 
-        <button>Change Visitor</button>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
 
-        <script src="scripts/main.js"></script>
-    </body>
 </html>
